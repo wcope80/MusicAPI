@@ -21,9 +21,9 @@ namespace MusicAPI.Controllers
         }
 
         [HttpGet]
-        public List<Artist> Artists()
+        public ActionResult Artists()
         {           
-            return ArtistList;
+            return Ok(ArtistList);
         }
     }
 }
