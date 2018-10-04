@@ -47,7 +47,7 @@ namespace MusicAPI.Controllers
         }
 
         [HttpPut]
-        public ActionResult Albums([FromBody]Album album)
+        public ActionResult Albums(int album_id, [FromBody]Album album)
         {
             Album oldAlbum = AlbumList.Where(a => a.Album_ID == album.Album_ID).FirstOrDefault();
            if(oldAlbum != null)
