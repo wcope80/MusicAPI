@@ -11506,11 +11506,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\allan\\Desktop\\MusicAPI\\MusicAPI.csproj",
+      "projectUniqueName": "c:\\Users\\allan\\Desktop\\Workspaces\\MusicAPI\\MusicAPI.csproj",
       "projectName": "MusicAPI",
-      "projectPath": "c:\\Users\\allan\\Desktop\\MusicAPI\\MusicAPI.csproj",
+      "projectPath": "c:\\Users\\allan\\Desktop\\Workspaces\\MusicAPI\\MusicAPI.csproj",
       "packagesPath": "C:\\Users\\allan\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\allan\\Desktop\\MusicAPI\\obj\\",
+      "outputPath": "c:\\Users\\allan\\Desktop\\Workspaces\\MusicAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

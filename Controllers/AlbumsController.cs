@@ -46,6 +46,21 @@ namespace MusicAPI.Controllers
             return Ok(album);
         }
 
+        [HttpPut]
+        public ActionResult Albums([FromBody]Album album)
+        {
+            Album oldAlbum = AlbumList.Where(a => a.Album_ID == album.Album_ID).FirstOrDefault();
+           if(oldAlbum != null)
+           {
+               oldAlbum.Artist = album.Artist;
+               oldAlbum.Name = album.Name;
+               oldAlbum.ReleaseDate = album.ReleaseDate;
+               oldAlbum.SongCount = album.SongCount;
+               return Ok(oldAlbum);
+           }
+           return NotFound();
+        }
+
     }
 
 }
