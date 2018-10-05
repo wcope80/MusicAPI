@@ -61,6 +61,18 @@ namespace MusicAPI.Controllers
            return NotFound();
         }
 
+        [HttpDelete]
+        public ActionResult DeleteAlbum(int id)
+        {
+            Album album = AlbumList.First(a => a.Album_ID == id);
+            if(album != null)
+            {
+                AlbumList.Remove(album);
+                return Ok();
+            } 
+            return NotFound();
+        }
+
     }
 
 }
