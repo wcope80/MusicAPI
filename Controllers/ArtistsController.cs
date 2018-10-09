@@ -25,5 +25,49 @@ namespace MusicAPI.Controllers
         {           
             return Ok(ArtistList);
         }
+
+        [HttpGet("{Id}")]
+        public ActionResult Artists(int Id)
+        {
+            Artist artist = ArtistList.FirstOrDefault(a => a.Artist_ID == Id);
+            if(artist != null)
+            {
+                return Ok(artist);
+            }
+            return NotFound();
+        }
+
+        [HttpPost]
+        public ActionResult Artists([FromBody]Artist artist)
+        {
+            artist.Artist_ID = ArtistList.OrderByDescending(a => a.Artist_ID).Select(a => a.Artist_ID).FirstOrDefault() + 1;
+            ArtistList.Add(artist);
+            return Ok(artist);
+        }
+
+        [HttpPut("{Id}")]
+        public ActionResult Artists(int Id, [FromBody]Artist artist)
+        {
+            Artist oldArtist = ArtistList.FirstOrDefault(a => a.Artist_ID == Id);
+            if(oldArtist != null)
+            {
+                oldArtist.Name = artist.Name ?? oldArtist.Name;
+                oldArtist.Genre = artist.Genre ?? oldArtist.Genre;
+                return Ok(oldArtist);
+            }
+            return NotFound();
+        }
+
+        [HttpDelete("{Id}")]
+        public ActionResult DeleteArtist(int Id)
+        {
+            Artist artist = ArtistList.FirstOrDefault(a => a.Artist_ID == Id);
+            if(artist != null)
+            {
+                ArtistList.Remove(artist);
+                return Ok();
+            }
+            return NotFound();
+        }
     }
 }

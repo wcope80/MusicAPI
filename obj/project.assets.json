@@ -11506,22 +11506,24 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\allan\\Desktop\\Workspaces\\MusicAPI\\MusicAPI.csproj",
+      "projectUniqueName": "C:\\Users\\allan\\Downloads\\Documents\\GitHub\\MusicAPI\\MusicAPI.csproj",
       "projectName": "MusicAPI",
-      "projectPath": "c:\\Users\\allan\\Desktop\\Workspaces\\MusicAPI\\MusicAPI.csproj",
+      "projectPath": "C:\\Users\\allan\\Downloads\\Documents\\GitHub\\MusicAPI\\MusicAPI.csproj",
       "packagesPath": "C:\\Users\\allan\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\allan\\Desktop\\Workspaces\\MusicAPI\\obj\\",
+      "outputPath": "C:\\Users\\allan\\Downloads\\Documents\\GitHub\\MusicAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\allan\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\allan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.1"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
